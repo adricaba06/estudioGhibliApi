@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FilmListComponent } from "./components/film-list-component/film-list-component";
+import { FilmPage } from '../app/pages/film-page/film-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FilmListComponent],
+  imports: [RouterOutlet, FilmPage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
