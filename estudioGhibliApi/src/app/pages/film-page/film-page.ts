@@ -14,7 +14,7 @@ export class FilmPage implements OnInit{
 
   filmList: Film[] = [];
 
-  constructor(private filmService: FilmsService) {}
+  constructor(private filmService: FilmsService) {} //autowired basicamente
 
  ngOnInit(): void {
   this.filmService.getFilmList().subscribe((resp) => {
