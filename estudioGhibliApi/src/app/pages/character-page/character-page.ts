@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../../services/character-service';
 import { Character } from '../../interfaces/character-item-response/character-item-response';
 import { CharacterItemComponent } from '../../components/character-item-component/character-item-component';
+import { Navbar } from "../../components/navbar/navbar";
 
 @Component({
   selector: 'app-character-page',
-  imports: [CharacterItemComponent],
+  imports: [CharacterItemComponent, Navbar],
   templateUrl: './character-page.html',
   styleUrl: './character-page.css'
 })

@@ -4,10 +4,11 @@ import { FilmsService } from '../../services/films-service';
 import { FilmDetailsService } from '../../services/film-details-service';
 import { ActivatedRoute } from '@angular/router';
 import { FilmDetailsComponent } from "../../components/film-details-component/film-details-component";
+import { Navbar } from "../../components/navbar/navbar";
 
 @Component({
   selector: 'app-film-details-page',
-  imports: [FilmDetailsComponent],
+  imports: [FilmDetailsComponent, Navbar],
   templateUrl: './film-details-page.html',
   styleUrl: './film-details-page.css',
 })
