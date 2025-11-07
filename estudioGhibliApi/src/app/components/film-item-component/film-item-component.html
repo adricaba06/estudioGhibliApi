@@ -1,5 +1,5 @@
 
-<div class="card movie-card">
+<div class="card movie-card" (click)="navigateToDetails()">
   <img [src]="film.image" class="card-img-top" alt="Portada de la película" />
   <div class="card-body text-center">
     <div class="movie-title-large">{{ film.original_title }}</div>
