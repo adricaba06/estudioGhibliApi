@@ -1,1 +1,42 @@
-<p>character-details-component works!</p>
+<div class="container mt-4">
+  <div class="card movie-card">
+    <div class="row g-0">
+
+      <!-- Imagen -->
+      <div class="col-md-4 d-flex align-items-center justify-content-center p-3">
+        <img
+          src="https://i.pinimg.com/736x/2c/47/d5/2c47d5dd5b532f83bb55c4cd6f5bd1ef.jpg"
+          class="img-fluid rounded card-img-top"
+        />
+      </div>
+
+      <!-- Información -->
+      <div class="col-md-8">
+        <div class="card-body">
+
+          <h2 class="movie-title-large mb-0">{{ character?.name }}</h2>
+          <p class="movie-title-small mb-3">
+            {{ character?.gender }} • {{ character?.age }} años
+          </p>
+
+          <div class="row mb-2">
+            <div class="col-6">
+              <strong>Color de ojos:</strong>
+              <p>{{ character?.eye_color }}</p>
+            </div>
+            <div class="col-6">
+              <strong>Color de pelo:</strong>
+              <p>{{ character?.hair_color }}</p>
+            </div>
+          </div>
+          <div class="mb-2">
+            <strong class="d-block mb-1">Películas</strong>
+            <ul class="ps-3">
+              <li>{{ character?.films?.[0] }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Character } from '../../interfaces/character-item-response/character-item-response';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-character-item-component',
@@ -9,4 +10,11 @@ import { Character } from '../../interfaces/character-item-response/character-it
 })
 export class CharacterItemComponent {
   @Input() character!: Character;
+
+   constructor(private router: Router) { }
+
+  navigateToDetails() {
+    this.router.navigate(['/character', this.character.id]);
+  }
+
 }
