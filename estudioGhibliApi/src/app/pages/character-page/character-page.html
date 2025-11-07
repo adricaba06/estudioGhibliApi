@@ -1,0 +1,11 @@
+<div class="background">
+<div class="container mt-4">
+    <div class="row">
+        @for (character of characterList; track character.id){
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <app-character-item-component [character] = "character"></app-character-item-component>
+            </div>
+        }
+    </div>
+</div>
+</div>
