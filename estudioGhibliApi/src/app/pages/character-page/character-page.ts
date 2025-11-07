@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../../services/character-service';
 import { Character } from '../../interfaces/character-item-response/character-item-response';
+import { CharacterItemComponent } from '../../components/character-item-component/character-item-component';
 
 @Component({
   selector: 'app-character-page',
-  imports: [],
+  imports: [CharacterItemComponent],
   templateUrl: './character-page.html',
   styleUrl: './character-page.css'
 })

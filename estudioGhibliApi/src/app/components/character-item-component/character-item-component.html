@@ -18,8 +18,9 @@
                 <div>
                     <strong>Films:</strong>
                     <ul>
-                        @for (film of character.films; track film) {}
-                        <li><a [href]="film">{{ film }}</a></li>
+                        @for (film of character.films; track film) {
+                            <li><a [href]="film">{{ film }}</a></li>
+                        }
                     </ul>
                 </div>
             }

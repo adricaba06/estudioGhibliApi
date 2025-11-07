@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Character } from '../../interfaces/character-item-response/character-item-response';
-import { CharacterService } from '../../services/character-service';
 
 @Component({
   selector: 'app-character-item-component',
