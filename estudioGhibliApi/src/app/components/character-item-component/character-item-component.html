@@ -1,0 +1,34 @@
+<div class="card character-card">
+    <div class="card-body text-center">
+        <div class="character-name-large">{{ character.name }}</div>
+        <div class="character-name-small">{{ character.gender }} • {{ character.age }}</div>
+
+        <div class="character-details">
+            <div><strong>Eye color:</strong> {{ character.eye_color }}</div>
+            <div><strong>Hair color:</strong> {{ character.hair_color }}</div>
+
+            @if (character.species){
+                <div >
+                    <strong>Species:</strong>
+                    <a [href]="character.species" target="_blank" rel="noopener">{{ character.species }}</a>
+                </div>
+            }
+            
+            @if (character.films.length){
+                <div>
+                    <strong>Films:</strong>
+                    <ul>
+                        @for (film of character.films; track film) {}
+                        <li><a [href]="film">{{ film }}</a></li>
+                    </ul>
+                </div>
+            }
+            
+            @if (character.url){
+                <div>
+                    <small><a [href]="character.url">Source</a></small>
+                </div>
+            }
+        </div>
+    </div>
+</div>
