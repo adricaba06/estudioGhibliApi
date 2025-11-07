@@ -1,0 +1,8 @@
+
+<div class="card movie-card" (click)="navigateToDetails()">
+  <img [src]="film.image" class="card-img-top" alt="Portada de la película" />
+  <div class="card-body text-center">
+    <div class="movie-title-large">{{ film.original_title }}</div>
+    <div class="movie-title-small">{{ film.original_title_romanised }}</div>
+  </div>
+</div>

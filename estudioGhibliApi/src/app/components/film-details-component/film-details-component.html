@@ -1,0 +1,32 @@
+<div class="container my-5">
+  <div class="row g-4 align-items-start">
+    <div class="col-md-4 text-center">
+      <img [src]="film?.image" alt="Poster" class="img-fluid rounded shadow-sm" />
+    </div>
+
+    <div class="col-md-8">
+      <h2 class="mb-3 fw-bold movie-title-large">{{ film?.original_title_romanised }}</h2>
+      <h5 class="text-muted fst-italic mb-4">Título original: {{ film?.original_title }}</h5>
+
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item"><strong>Director:</strong> {{ film?.director }}</li>
+        <li class="list-group-item"><strong>Productor:</strong> {{ film?.producer }}</li>
+        <li class="list-group-item"><strong>Año de estreno:</strong> {{ film?.release_date }}</li>
+        <li class="list-group-item"><strong>Duración:</strong> {{ film?.running_time }} minutos</li>
+        <li class="list-group-item"><strong>Puntuación RT:</strong> {{ film?.rt_score }}</li>
+      </ul>
+
+      <p class="lead"><strong>Descripción:</strong> {{ film?.description }}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
